@@ -12,3 +12,93 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+.core {
+  opacity: 0;
+}
+
+.contour {
+  fill: var(--accent-color);
+}
+
+.main-body {
+  opacity: 0;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon:hover {
+  cursor: pointer;
+}
+
+.like-icon:hover .main-body {
+  opacity: 1;
+  transition: opacity 0.3s;
+  fill: var(--black-fill);
+}
+
+.like-icon:hover .core {
+  fill: var(--black-fill);
+  transition: opacity 0.3s;
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.card__icon-button:active .main-body {
+  opacity: 1;
+  fill: var(--color-heart-main);
+  transition: opacity 0.3s ease;
+}
+
+.card__icon-button:active .core {
+  opacity: 1;
+  fill: var(--color-heart-main);
+  transition: opacity 0.3s ease;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .main-body {
+  opacity: 1;
+  fill: var(--color-heart-main);
+  transition: opacity 0.3s ease;
+}
+
+.like-icon.is-liked .core {
+  opacity: 1;
+  fill: var(--color-heart-main);
+  transition: opacity 0.3s ease;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--color-heart-main);
+  transition: fill 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked {
+  animation: heart-scale 0.3s ease-in 0.1s;
+}
+
+@keyframes heart-scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.5;
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: change-opacity 0.3s ease-in 0.3s;
+}
+
+@keyframes change-opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1.5;
+  }
+}
