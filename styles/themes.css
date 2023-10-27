@@ -5,22 +5,9 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
-    --main-weight: 465;
-    --accent-weight: 785;
-    --from-bg-color: #007f0c;
-    --to-bg-color: #004306;
-    --accent-color: #00cc14;
-    --bg-line-color: #000;
-    --content-bg: #000;
-    --shadow-lable: #000;
-    --hover-button-text: #fff;
-    --sparks-fill: #f00;
-    --black-fill: #000;
-    --color-heart-main: #f00;
-  }
-
-  :root.theme-auto {
+  :root {
+    --main-font: Inter, sans-serif;
+    --acсent-font: "PressStart2P", sans-serif;
     --main-weight: 465;
     --accent-weight: 785;
     --from-bg-color: #007f0c;
@@ -36,7 +23,9 @@
   }
 }
 
-.theme-dark {
+:root.theme-dark {
+  --main-font: Inter, sans-serif;
+  --acсent-font: "PressStart2P", sans-serif;
   --main-weight: 465;
   --accent-weight: 785;
   --from-bg-color: #007f0c;
@@ -52,49 +41,3 @@
   --color-heart-main: #f00;
 }
 
-@media (prefers-color-scheme: light) {
-  :root.theme-light {
-    --main-weight: 400;
-    --accent-weight: 700;
-    --from-bg-color: #e7e7e7;
-    --to-bg-color: #1a1a1a;
-    --accent-color: #000;
-    --bg-line-color: #d3d3d3;
-    --content-bg: #fff;
-    --shadow-lable: #fff;
-    --hover-button-text: #fff;
-    --sparks-fill: #f00;
-    --black-fill: #000;
-    --color-heart-main: #f00;
-  }
-
-  :root.theme-auto {
-    --main-weight: 400;
-    --accent-weight: 700;
-    --from-bg-color: #e7e7e7;
-    --to-bg-color: #1a1a1a;
-    --accent-color: #000;
-    --bg-line-color: #d3d3d3;
-    --content-bg: #fff;
-    --shadow-lable: #fff;
-    --hover-button-text: #fff;
-    --sparks-fill: #f00;
-    --black-fill: #000;
-    --color-heart-main: #f00;
-  }
-}
-
-.theme-light {
-  --main-weight: 400;
-  --accent-weight: 700;
-  --from-bg-color: #e7e7e7;
-  --to-bg-color: #1a1a1a;
-  --accent-color: #000;
-  --bg-line-color: #d3d3d3;
-  --content-bg: #fff;
-  --shadow-lable: #fff;
-  --hover-button-text: #fff;
-  --sparks-fill: #f00;
-  --black-fill: #000;
-  --color-heart-main: #f00;
-}
