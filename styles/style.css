@@ -32,7 +32,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: var(--accent-color);
-  font-variation-settings: "wght" var( --main-weight)
+  font-variation-settings: "wght" var(--main-weight);
 }
 
 .header {
@@ -233,20 +233,19 @@
   border: none;
   height: 100%;
   padding: 0;
-  outline:  2px solid transparent;
+  outline: 2px solid transparent;
   transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus {
   outline: none;
-} 
+}
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
   transition: outline 0.3s ease;
   height: 100%;
 }
-
 
 .animated-button {
   overflow: hidden;
@@ -283,7 +282,6 @@
   transition: transform 0.3s;
 }
 
-
 .card__like-button {
   padding: 0;
   background-color: transparent;
@@ -292,7 +290,7 @@
   width: 130px;
 }
 
-.button-text { 
+.button-text {
   display: flex;
   height: 100%;
   width: 100%;

@@ -40,11 +40,9 @@
 .like-icon:hover .main-body {
   opacity: 1;
   transition: opacity 0.3s;
-  
 }
 
 .like-icon:hover .core {
-  
   transition: opacity 0.3s;
   opacity: 1;
   transition-delay: 0.1s;
