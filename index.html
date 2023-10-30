@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./svg/favicon.svg" type="svg/x-icon" />
-    <link rel="icon" href="./svg/favicon.ico" type="icon" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./svg/favicon.ico" type="image/x-icon" sizes="any" />
+    <link rel="apple-touch-icon" href="./images/apple-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -19,14 +20,18 @@
   <body class="page">
     <header id="main" class="header">
       <div class="header-start">
-        <a href="#main" class="header__title">&lt;/HTML&gt;</a>
-        <h1 class="header__text">закрывающий тег</h1>
+        <a href="#main" class="header-title">&lt;/HTML&gt;</a>
+        <h1 class="header-text">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="button theme-menu__button"
+            >
               Темно
             </button>
           </li>
@@ -35,13 +40,17 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="button theme-menu__button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="button theme-menu__button"
+            >
               Светло
             </button>
           </li>
@@ -54,7 +63,11 @@
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="wraper-img">
-          <img src="./images/first.jpg" class="card-picture filter-grayscale" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-grayscale"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;поиски нового&gt;</span>
         </div>
         <div class="box-content-text">
@@ -95,12 +108,12 @@
             предвкушением стал ждать начала обучения.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -126,8 +139,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -135,7 +150,11 @@
       <article class="content-card">
         <h2 class="card-title">1 спринт: Я — чистый лист</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture filter-contrast" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-contrast"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;/HTML&gt;</span>
         </div>
         <div class="box-content-text">
@@ -150,12 +169,12 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -181,8 +200,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -190,7 +211,11 @@
       <article class="content-card">
         <h2 class="card-title">1 спринт: А если не получится?</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture filter-saturate" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-saturate"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;CSS&gt;</span>
         </div>
         <div class="box-content-text">
@@ -203,12 +228,12 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -234,8 +259,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -246,6 +273,7 @@
           <img
             src="./images/image.jpg"
             class="card-picture filter-brightness"
+            alt="Фургон в лесу"
           />
           <span class="lable">&lt;desigions&gt;</span>
         </div>
@@ -261,12 +289,12 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -292,8 +320,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -301,7 +331,11 @@
       <article class="content-card">
         <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture filter-sepia" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-sepia"
+            alt="Фургон в лесу"
+          />
           <span class="lable">care</span>
         </div>
         <div class="box-content-text">
@@ -317,12 +351,12 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -348,8 +382,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -357,7 +393,11 @@
       <article class="content-card">
         <h2 class="card-title">3 спринт: Обходные стратегии</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture filter-invert" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-invert"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;support&gt;</span>
         </div>
         <div class="box-content-text">
@@ -370,12 +410,12 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -401,8 +441,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -410,7 +452,11 @@
       <article class="content-card">
         <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture filter-blur" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture filter-blur"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="box-content-text">
@@ -425,12 +471,12 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -456,8 +502,10 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
@@ -465,7 +513,11 @@
       <article class="content-card">
         <h2 class="card-title">«Сейчас я здесь»</h2>
         <div class="wraper-img">
-          <img src="./images/image.jpg" class="card-picture multi-filter" />
+          <img
+            src="./images/image.jpg"
+            class="card-picture multi-filter"
+            alt="Фургон в лесу"
+          />
           <span class="lable">&lt;experience&gt;</span>
         </div>
         <div class="box-content-text">
@@ -482,12 +534,12 @@
             этой точке пути.
           </p>
           <div class="double-button">
-            <button class="card__icon-button">
+            <button class="button card__icon-button">
               <svg
                 class="like-icon"
                 width="39"
-                height="36"
-                viewBox="0 0 39 36"
+                height="34"
+                viewBox="0 0 39 34"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -513,36 +565,42 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button animated-button">
-              <span class="button-text animated-button_text">Like</span>
+            <button class="button card__like-button animated-button">
+              <span class="main-text button-text animated-button-text"
+                >Like</span
+              >
             </button>
           </div>
         </div>
       </article>
 
       <button
-        class="footer__save animated-button"
+        class="button-save animated-button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg class="footer-svg" viewBox="0 0 39 39">
-         <use href="#disketa">
+        <svg class="button-svg" viewBox="0 0 39 39">
+          <use href="./svg/disketa.svg#disketa"></use>
         </svg>
-        <span class="footer-button-text animated-button_text"
+        <span class="main-text button-save-text animated-button-text"
           >Сохранить на память</span
         >
       </button>
-      <dialog id="dialog-id">
+      <dialog id="dialog-id" class="dialog">
         <div class="dialog__save">
           <svg class="dialog-svg" viewBox="0 0 39 39">
-           <use href="#disketa">
+            <use href="./svg/disketa.svg#disketa"></use>
           </svg>
-          <p class="footer-button-text">Вставьте дискету, чтобы продолжить</p>
+          <p class="main-text dialog-text">
+            Вставьте дискету, чтобы продолжить
+          </p>
         </div>
-        <form method="dialog">
+        <form method="dialog" class="form">
           <button class="close-button animated-button">
-            <span class="footer-button-text animated-button_text">Ок</span>
+            <span class="main-text dialog-button-text animated-button-text"
+              >Ок</span
+            >
           </button>
         </form>
       </dialog>
@@ -550,46 +608,3 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="disketa" stroke="currentColor" fill="currentColor">
-    <path
-      fill="var(--accent-color)"
-      d="M0 0h3v3H0zM0 3h3v3H0zM0 6h3v3H0zM0 9h3v3H0zM0 12h3v3H0zM0 15h3v3H0zM0 18h3v3H0zM0 21h3v3H0zM0 24h3v3H0zM0 27h3v3H0zM0 30h3v3H0zM0 33h3v3H0zM0 36h3v3H0zM33 0v3h-3V0z"
-    />
-    <path
-      fill="var(--accent-color)"
-      d="M30.003 0v3h-3V0zM27 0v3h-3V0zM24 0v3h-3V0zM20.999 0v3h-3V0z"
-    />
-    <path fill="var(--accent-color)" d="M18 0v3h-3V0zM14.999 0v3h-3V0z" />
-    <path fill="var(--accent-color)" d="M12 0v3H9V0zM8.996 0v3h-3V0z" />
-    <path
-      fill="var(--accent-color)"
-      d="M6 0v3H3V0zM36 3v3h-3V3zM8.996 6v3h-3V6zM8.996 3v3h-3V3zM8.996 9v3h-3V9zM30.003 6v3h-3V6zM30.003 3v3h-3V3zM30.003 9v3h-3V9zM24 6v3h-3V6zM24 3v3h-3V3zM24 9v3h-3V9zM30.003 12v3h-3v-3zM27 12v3h-3v-3zM24 12v3h-3v-3zM20.999 12v3h-3v-3z"
-    />
-    <path fill="var(--accent-color)" d="M18 12v3h-3v-3zM14.999 12v3h-3v-3z" />
-    <path
-      fill="var(--accent-color)"
-      d="M12 12v3H9v-3zM8.996 12v3h-3v-3zM33 21v3h-3v-3z"
-    />
-    <path
-      fill="var(--accent-color)"
-      d="M30.003 21v3h-3v-3zM27 21v3h-3v-3zM24 21v3h-3v-3zM20.999 21v3h-3v-3z"
-    />
-    <path fill="var(--accent-color)" d="M18 21v3h-3v-3zM14.999 21v3h-3v-3z" />
-    <path
-      fill="var(--accent-color)"
-      d="M12 21v3H9v-3zM8.996 21v3h-3v-3zM33 24v3h-3v-3zM8.996 24v3h-3v-3zM33 27v3h-3v-3zM8.996 27v3h-3v-3zM33 30v3h-3v-3zM8.996 30v3h-3v-3zM8.996 33v3h-3v-3zM33 33v3h-3v-3zM36 36v3h-3v-3zM33 36v3h-3v-3z"
-    />
-    <path
-      fill="var(--accent-color)"
-      d="M30.003 36v3h-3v-3zM27 36v3h-3v-3zM24 36v3h-3v-3zM20.999 36v3h-3v-3z"
-    />
-    <path fill="var(--accent-color)" d="M18 36v3h-3v-3zM14.999 36v3h-3v-3z" />
-    <path fill="var(--accent-color)" d="M12 36v3H9v-3zM8.996 36v3h-3v-3z" />
-    <path
-      fill="var(--accent-color)"
-      d="M6 36v3H3v-3zM39 39h-3v-3h3zM39 36h-3v-3h3zM39 33h-3v-3h3zM39 30h-3v-3h3zM39 27h-3v-3h3zM39 24h-3v-3h3zM39 21h-3v-3h3zM39 18h-3v-3h3zM39 15h-3v-3h3zM39 12h-3V9h3zM39 9h-3V6h3z"
-    />
-  </symbol>
-</svg>

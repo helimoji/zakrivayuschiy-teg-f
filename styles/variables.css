@@ -1,39 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --main-font: Inter, sans-serif;
-    --acсent-font: "PressStart2P", sans-serif;
-    --main-weight: 400;
-    --accent-weight: 700;
-    --from-bg-color: #e7e7e7;
-    --to-bg-color: #1a1a1a;
-    --accent-color: #000;
-    --bg-line-color: #d3d3d3;
-    --content-bg: #fff;
-    --shadow-lable: #fff;
-    --hover-button-text: #fff;
-    --sparks-fill: #f00;
-    --black-fill: #000;
-    --color-heart-main: #f00;
-    --hover-svg: #fff;
-  }
-}
-
-:root.theme-light {
-  --main-font: Inter, sans-serif;
-  --acсent-font: "PressStart2P", sans-serif;
-  --main-weight: 400;
-  --accent-weight: 700;
-  --from-bg-color: #e7e7e7;
-  --to-bg-color: #1a1a1a;
-  --accent-color: #000;
-  --bg-line-color: #d3d3d3;
-  --content-bg: #fff;
-  --shadow-lable: #fff;
-  --hover-button-text: #fff;
-  --sparks-fill: #f00;
-  --black-fill: #000;
-  --color-heart-main: #f00;
-  --hover-svg: #fff;
+:root {
+  --main-font: Inter;
+  --acсent-font: "Press Start 2P";
 }
