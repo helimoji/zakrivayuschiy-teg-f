@@ -70,6 +70,33 @@
   padding-top: clamp(120px, 10.4167vw, 136px);
 }
 
+.button {
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color);
+  font-family: var(--acсent-font);
+  font-weight: var(--main-weight);
+  font-size: 14px;
+  outline: 2px solid var(--accent-color);
+}
+
+.main-text {
+  color: var(--accent-color);
+  font-family: var(--acсent-font);
+  font-weight: var(--main-weight);
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .theme-menu {
   display: flex;
   padding-block-start: 25px;
@@ -92,6 +119,7 @@
   text-transform: uppercase;
   position: relative;
   padding-inline-start: 25px;
+  outline: none;
 }
 
 .theme-menu__button::after {
@@ -121,7 +149,7 @@
 }
 
 .theme-menu__button:hover {
-  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
   opacity: 0.6;
 }
 
@@ -146,22 +174,6 @@
   100% {
     left: 0px;
   }
-}
-
-.button {
-  background-color: transparent;
-  border: none;
-  color: var(--accent-color);
-  font-family: var(--acсent-font);
-  font-weight: var(--main-weight);
-  font-size: 14px;
-}
-
-.main-text {
-  color: var(--accent-color);
-  font-family: var(--acсent-font);
-  font-weight: var(--main-weight);
-  font-size: 14px;
 }
 
 .content-card {
@@ -263,7 +275,6 @@
 }
 
 .animated-button:hover {
-  cursor: pointer;
   transition: transform 0.3s;
   transform: translateX(0);
 }
@@ -294,7 +305,6 @@
 
 .card__like-button {
   padding: 0;
-  outline: 2px solid var(--accent-color);
   width: 130px;
 }
 
@@ -307,27 +317,19 @@
   padding: 10px 0;
 }
 
-.card__like-button:focus {
-  outline: none;
-}
-
 .card__like-button:focus-visible {
   box-shadow: 3px 3px var(--accent-color);
-  outline: 2px solid var(--accent-color);
   transition: box-shadow 0.3s;
 }
 
 .button-save {
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 17px 20px 15px;
   gap: 9px;
   margin: 0px auto 100px;
   border: 2px solid var(--accent-color);
   background-color: var(--content-bg);
   min-width: clamp(306px, 100vw - 30px, 335px);
-  min-height: clamp(51px, 306px - 26vh, 80px);
+  outline: none;
 }
 
 .button-save:focus {
@@ -343,10 +345,6 @@
 .button-save-text {
   text-align: center;
   line-height: 12.6px;
-}
-
-.button-save:hover {
-  cursor: pointer;
 }
 
 .button-svg {
@@ -376,27 +374,14 @@
 }
 
 .close-button {
-  background-color: transparent;
-  outline: solid 2px var(--accent-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
   margin: 0 auto 30px;
   width: 293px;
-  padding: 9px 17px;
-}
-
-.close-button:hover {
-  cursor: pointer;
+  padding: 10.5px 6px;
 }
 
 .dialog__save {
   background-color: transparent;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
   padding: 30px;
 }
@@ -446,6 +431,7 @@
 .filter-blur {
   filter: blur(5px);
 }
+
 .multi-filter {
   filter: hue-rotate(180deg) contrast(80%) sepia(50%);
 }
