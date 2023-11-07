@@ -184,7 +184,7 @@ button:hover {
 }
 
 .card-title {
-  font-family: var(--main-font);
+  font-family: var(--main-font, Inter), Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: var(--accent-weight);
   line-height: normal;
@@ -203,7 +203,7 @@ button:hover {
 }
 
 .content-text {
-  font-family: var(--main-font), Arial, Helvetica, sans-serif;
+  font-family: var(--main-font, Inter), Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: var(--main-weight);
   line-height: 21px;
